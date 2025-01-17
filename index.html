@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merienda:wght@300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1>Добавление , Изменение и удаление элемента из таблицы</h1>
+
+        <form name="addUser">
+            <div class="form">
+                <div class="inp">
+                    <p>Имя</p>
+                    <input type="text" class="inp" name="name">
+                </div>
+                <div class="inp">
+                    <p>Возраст</p>
+                    <input type="text" class="inp" name="age">
+                </div>
+                <div class="btn">
+                    <button class="bt">Показать</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="modal">
+        <div class="modal__dialog">
+          <div class="modal__content">
+            <form action="#">
+              <div data-close class="modal__close">&times;</div>
+              <div class="modal__title">Поменять!</div>
+              <input required placeholder="Ваше имя" name="name" type="text" class="modal__input" id="nameInput">
+              <input required placeholder="Ваш возраст" name="phone" type="phone" class="modal__input" id="ageInput">
+              <button class="btn btn_dark btn_min">Нажми!!!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
